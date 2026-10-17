@@ -8,12 +8,25 @@
   font-weight: 700;
   font-display: swap;
 }
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Bold.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "Escoredream";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
     format("woff");
   font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  font-weight: 300;
   font-display: swap;
 }
 
@@ -24,46 +37,87 @@ body {
 .inner {
   width: 1200px;
   margin: 60px auto;
+  position: relative;
 }
+.inner .list_tab {
+  position: sticky;
+  top: 60px;
+  /* position: fixed;
+  top: 60px;
+  right: max(calc((100vw - 1200px) / 2), 0px); */
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.list_tab a {
+  padding: 2px 20px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "NanumBarunGothic";
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.list_tab a:nth-child(1) {
+  background: #d9e3fc;
+}
+.list_tab a:nth-child(2) {
+  background: #fcdbf0;
+}
+.list_tab a:nth-child(3) {
+  background: #c4e4d3;
+}
+.list_tab a:nth-child(4) {
+  background: #fde6d1;
+}
+/*전체 카테고리별 흰색 박스*/
 .list_box {
   background-color: #fff;
   width: 100%;
   border-radius: 30px;
   margin: 20px 0;
-  padding: 60px 90px 55px;
+  padding: 60px 90px;
 }
 .list_box h2 {
   font-size: 27px;
   color: #252525;
   font-family: "Paperozi";
   letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+/*날짜별 카테고리 박스*/
+.stu_box {
+  margin: 25px 0;
+  border-bottom: 1px dotted #c7c7c7;
+  padding-bottom: 30px;
 }
 .stu_tit {
   display: flex;
   align-items: baseline;
   gap: 8px;
-  margin: 5px 0 20px;
+  /* margin: 5px 0 20px; */
 }
-.list_box h3 {
+.stu_tit h3 {
   font-size: 20px;
   color: #577ee1;
   font-family: "Escoredream";
   letter-spacing: 0.3px;
 }
-.list_box p {
+.stu_tit p {
   font-size: 13px;
   color: #8a8989;
   font-family: "Escoredream";
 }
 .list_box ul {
-  margin: 5px 0;
-
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
 }
 .list_box ul li {
   width: calc((100% - 6%) / 4);
+  margin: 10px 0 0;
 }
 .list_box ul li a {
   border: 1px solid #252525;
@@ -81,4 +135,5 @@ body {
   padding-right: 40px;
   background-size: 8%;
   color: #fff;
+  transition: all 0.5s;
 }
