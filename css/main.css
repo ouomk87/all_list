@@ -1,17 +1,84 @@
+/* @import url(../font/ONE\ Mobile\ Title.ttf); */
 @import url(reset.css);
+
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Escoredream";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 body {
   background: rgb(245, 245, 245);
 }
-
 /* 카테고리 리스트 박스 */
 .inner {
   width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 .list_box {
   background-color: #fff;
   width: 100%;
   border-radius: 30px;
-  margin: 50px 0;
-  padding: 100px;
+  margin: 20px 0;
+  padding: 60px 90px 55px;
+}
+.list_box h2 {
+  font-size: 27px;
+  color: #252525;
+  font-family: "Paperozi";
+  letter-spacing: 0.5px;
+}
+.stu_tit {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 5px 0 20px;
+}
+.list_box h3 {
+  font-size: 20px;
+  color: #577ee1;
+  font-family: "Escoredream";
+  letter-spacing: 0.3px;
+}
+.list_box p {
+  font-size: 13px;
+  color: #8a8989;
+  font-family: "Escoredream";
+}
+.list_box ul {
+  margin: 5px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.list_box ul li {
+  width: calc((100% - 6%) / 4);
+}
+.list_box ul li a {
+  border: 1px solid #252525;
+  border-radius: 10px;
+
+  display: block;
+  padding: 10px;
+  clear: both;
+  background: url("../images/link.png") no-repeat 95% center;
+  padding-right: 40px;
+  background-size: 8%;
+}
+.list_box ul li a:hover {
+  background: #252525 url("../images/link_on.png") no-repeat 95% center;
+  padding-right: 40px;
+  background-size: 8%;
+  color: #fff;
 }
