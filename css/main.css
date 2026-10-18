@@ -122,18 +122,17 @@ body {
 .list_box ul li a {
   border: 1px solid #252525;
   border-radius: 10px;
-
   display: block;
   padding: 10px;
   clear: both;
   background: url("../images/link.png") no-repeat 95% center;
   padding-right: 40px;
-  background-size: 8%;
+  background-size: 7%;
 }
 .list_box ul li a:hover {
   background: #252525 url("../images/link_on.png") no-repeat 95% center;
   padding-right: 40px;
-  background-size: 8%;
+  background-size: 7%;
   color: #fff;
   transition: all 0.5s;
 }
