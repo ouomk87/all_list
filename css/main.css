@@ -128,6 +128,7 @@ body {
   background: url("../images/link.png") no-repeat 95% center;
   padding-right: 40px;
   background-size: 7%;
+  transition: all 0.5s;
 }
 .list_box ul li a:hover {
   background: #252525 url("../images/link_on.png") no-repeat 95% center;
